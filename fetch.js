@@ -20,9 +20,6 @@ fetch('https://jsonplaceholder.typicode.com/comments/1')
 //output     {postId: 1, id: 1, name: 'id labore ex et quam laborum', email: 'Eliseo@gardner.biz', body: 'laudantium enim quasi est quidem magnam voluptate ipsam eos tempora quo necessitatibus dolor quam autem quasi reiciendis et nam sapiente accusantium'}
 
 
-
-
-
 fetch('https://jsonplaceholder.typicode.com/comments',{
         method: "POST",
         body: JSON.stringify({
@@ -37,7 +34,18 @@ fetch('https://jsonplaceholder.typicode.com/comments',{
 
 // output     {id: 501}
 
-
+// fetch('https://jsonplaceholder.typicode.com/comments',{
+//         method: 'POST',
+//         body: JSON.stringify({
+//             postid: 1,
+//             name: 'hi',
+//             email: 'mail',
+//             body: 'okay pr'
+//         })
+//     })
+//     .then(response => response.json())
+//     .then(data => console.log(data))
+//     .catch(error => console.warn('Error', error));
 
 
 // chatGPT Explaination

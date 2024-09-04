@@ -12,10 +12,9 @@ const player = {
     }
 };
 
-console.log(player.address.city);    // bunker
-
+// console.log(player.address.city);    // bunker
 const { name, club, address: {city} } = player;         // Destructing.....
-// const { name, club, address: { city } } = player; extracts name, club, and city from the player object.
+// const { name, club, address: { city } } = player;     extracts name, club, and city from the player object.
 console.log(`${name} lives in ${city}`);
 
 
@@ -34,7 +33,8 @@ console.log(`${name} lives in ${city}`);
 // lastname = 'Mary';
 // console.log(lastname);  // Mary
 
-
+let [firstname, middlename, lastname] = ['koko','maung','har'];
+console.log(firstname, middlename);
 
 
 // => Object Literals
@@ -49,6 +49,18 @@ console.log(`${name} lives in ${city}`);
 
     addressMaker('Dean','Sam');
 
+
+    function add(city, state){
+        const remove = {city,state}
+        console.log(remove);
+    }
+    add('hi','hello');
+
+    function inn(hi,hello) {
+        const ha = {hi,hello}
+        console.log(ha);
+    }
+    inn('hoe','htar');
 
 
     function address(city, state) {
@@ -66,11 +78,11 @@ console.log(`${name} lives in ${city}`);
 
 const exampleSet = new Set([1,1,1,1,2,2,2,2]);
 
-exampleSet.add(5);
-exampleSet.add(5).add(17);
+exampleSet.add(5);  // 3
+exampleSet.add(5).add(17);  // 4
 
 console.log(exampleSet.has(5));
 
 exampleSet.clear();
 
-console.log(exampleSet.size);
+console.log(exampleSet.size);  // 2

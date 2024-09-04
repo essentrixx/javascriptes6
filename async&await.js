@@ -10,10 +10,10 @@ async function photoUpload(){
 
     let result = await uploadStatus;  // uploadStatus resolved pee tae hti wait khing tr
 
-    // console.log(result);     // Promise  #sync
+    // console.log(result);     // Promise  #sync  // photo unloaded  0
     // console.log(photos.length);     // 0
 
-    console.log(result);    //  Photo Uploaded
+    console.log(result);    //  Photo Uploaded    1
     console.log(photos.length);   // 1
 }
 

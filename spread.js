@@ -1,4 +1,5 @@
 // Spread Operator     [... name of the array]
+// The JavaScript spread operator (...) expands an iterable (like an array) into more elements.
 
 let contacts = ["Mary", "Joel", "Danny"];
 

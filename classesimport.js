@@ -1,4 +1,4 @@
-import { Animal } from "./classes";
+import { Animal, Cat } from "./classes";
 
 let cat = new Animal('cat',4);      //cat.legs = 4
 
@@ -12,5 +12,3 @@ let cat = new Animal('cat',4);      //cat.legs = 4
 
 
 console.log(cat.metaData);  //type: cat    legs:4
-
-

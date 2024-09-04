@@ -1,14 +1,12 @@
 let incomes = [62000, 67000, 75000];
-let total = 0;
+let total = 5;
 
-for (const income of incomes){
-    console.log(income);   // 62 67 75
-    total += income;  // akone paung
+for( let income of incomes) {
+    console.log(income);  // incomes' each element pyan ya by income
+    total += income;
 }
 
 console.log(total);
-
-
 
 
 let fullname = "Dylan is god";
@@ -27,7 +25,7 @@ const students = [
 ]
 
 for( const student of students ) {
-    console.log( student.name + " lives in " + student.city );
+    console.log(`${student.name} lives in ${student.city}`);
 }
 
 

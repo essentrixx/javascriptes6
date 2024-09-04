@@ -7,13 +7,13 @@ console.log(numArray.indexOf(0));  // -1    cuz 0 so tae value ma pr loz
 
 // indexOf() returns the position of the first occurrence of a value in a string.
 
-let texts = "Hello world, welcome to the universe.";
+let texts = "Hello world, Welcome to the universe.";
 let results = texts.indexOf("Welcome");  // 13
-
+console.log(results);
 
 let text = "Hello world, welcome to the universe.";
 let result = text.indexOf("Welcome");  // -1
-
+console.log(result);
 
 
 

@@ -16,7 +16,9 @@
 const buyFlightTicket = () => {
     return new Promise( (resolve,reject) => {
         setTimeout( () => {
-            const error = false;     // false = payment wrong or decline 
+            const error = false;     // false meaning => error ma see buu so yin
+            // The error variable is used to determine whether an error occurred during the payment process.
+            // When error is false, it means no error occurred, so the payment was successful. The code then calls resolve, which handles the success case
 
             if( error ){
                 reject("Sorry your payment was not successful");
@@ -27,7 +29,6 @@ const buyFlightTicket = () => {
         }, 3000);
     });
 }
-
 
 // to know outcome when fulfilled, so we use 2 chain methods     .then()   .catch();
 
